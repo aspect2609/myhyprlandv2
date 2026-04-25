@@ -1,0 +1,179 @@
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* ── Shared pill bases ────────────────────────────────────────────────────── */
+
+#window, #mpris, #pulseaudio, #tray,
+#idle_inhibitor, #custom-notification,
+#custom-power, #custom-weather {
+    background-color: #24283b;
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+#custom-launcher, #custom-btop, #custom-updates, #workspaces {
+    background-color: #24283b;
+    margin: 5px 0;
+    padding: 0 12px;
+}
+
+
+/* ── Left modules ─────────────────────────────────────────────────────────── */
+
+#custom-launcher {
+    color: #ffffff;
+    margin-left: 8px;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-launcher:hover { background-color: #24283b; color: #191c18; }
+
+#custom-btop {
+    color: #ffffff;
+    margin-left: 8px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-btop:hover { background-color: #24283b; color: #191c18; }
+
+#custom-updates {
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 0;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-updates:hover { background-color: #24283b; color: #191c18; }
+
+#custom-system {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+#custom-system:hover { background-color: #24283b; color: #191c18; }
+
+#workspaces { border-radius: 0 10px 10px 0; }
+#workspaces button        { color: #c0caf5; padding: 0 4px; }
+#workspaces button.active { color: #ffffff; }
+
+#window { color: #ffffff; }
+
+#mpris { color: #ffffff; }
+#mpris:hover { background-color: #24283b; color: #191c18; }
+
+
+/* ── Center modules ───────────────────────────────────────────────────────── */
+
+#custom-weather { color: #ffffff; }
+#custom-weather:hover { background-color: #24283b; color: #191c18; }
+
+#clock {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+
+#custom-date {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* ── Right modules ────────────────────────────────────────────────────────── */
+
+#pulseaudio { color: #ffffff; }
+#pulseaudio:hover { background-color: #24283b; color: #191c18; }
+
+#custom-keyboard-light {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 0 5px 2px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-keyboard-light:hover { background-color: #24283b; color: #191c18; }
+
+#backlight {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 2px 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+#backlight:hover { background-color: #24283b; color: #191c18; }
+
+#tray { color: #ffffff; }
+
+#idle_inhibitor { color: #ffffff; }
+#idle_inhibitor:hover { background-color: #24283b; color: #191c18; }
+
+#custom-notification { color: #ffffff; }
+#custom-notification:hover { background-color: #24283b; color: #191c18; }
+
+#custom-powerprofile {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 0 5px 2px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-powerprofile:hover { background-color: #24283b; color: #191c18; }
+
+#battery {
+    background-color: #24283b;
+    color: #ffffff;
+    margin: 5px 2px 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+#battery:hover                         { background-color: #24283b; color: #191c18; }
+#battery.critical:not(.charging)       { color: #f7768e; }
+#battery.critical:not(.charging):hover { background-color: #24283b; color: #191c18; }
+
+#custom-power {
+    color: #ffffff;
+    margin-right: 8px;
+}
+#custom-power:hover { background-color: #24283b; color: #191c18; }
+
+
+/* ── Tooltips ─────────────────────────────────────────────────────────────── */
+
+window#waybar-tooltip {
+    background-color: #24283b;
+    color: #c0caf5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+window#waybar-tooltip tooltip {
+    background-color: #24283b;
+    color: #c0caf5;
+    border: 1px solid rgba(122, 162, 247, 0.3);
+    border-radius: 8px;
+}@import url("/tmp/waybar-colors.css");
