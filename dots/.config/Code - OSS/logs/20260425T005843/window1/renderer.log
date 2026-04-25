@@ -1,5 +1,0 @@
-2026-04-25 00:58:44.450 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
-2026-04-25 00:58:45.420 [info] Started local extension host with pid 697142.
-2026-04-25 00:58:45.716 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
-2026-04-25 00:58:51.431 [error] Unable to create workbench contribution 'workbench.contrib.agentHostTerminal'. [createInstance] wbe depends on UNKNOWN service remoteAgentHostService.
-2026-04-25 00:58:52.303 [info] [perf] Render performance baseline is 76ms

@@ -1,7 +1,0 @@
-2026-04-25 18:07:16.264 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
-2026-04-25 18:07:17.626 [info] Started local extension host with pid 130806.
-2026-04-25 18:07:17.970 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
-2026-04-25 18:07:22.155 [error] Unable to create workbench contribution 'workbench.contrib.agentHostTerminal'. [createInstance] wbe depends on UNKNOWN service remoteAgentHostService.
-2026-04-25 18:07:22.387 [error] Error while getting the latest version for the extension ms-azuretools.vscode-docker. TypeError: Failed to fetch
-2026-04-25 18:07:23.420 [info] [perf] Render performance baseline is 73ms
-2026-04-25 18:08:37.735 [warning] [backup tracker] suspended, ignoring unregister event file:///home/harvey/.config/opencode/package.json 
