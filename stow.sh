@@ -1,0 +1,1 @@
+stow -d ~/Projects/myhyprlandv2/ -t ~/ dots
