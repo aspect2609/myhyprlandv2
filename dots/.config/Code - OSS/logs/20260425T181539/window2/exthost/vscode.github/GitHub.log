@@ -1,0 +1,4 @@
+2026-04-25 18:24:06.312 [info] Log level: Info
+2026-04-25 18:24:21.946 [info] Log level: Info
+2026-04-25 18:24:22.062 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2026-04-25 18:25:24.364 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for aspect2609/myhyprlandv2: Error: No GitHub authentication session available.

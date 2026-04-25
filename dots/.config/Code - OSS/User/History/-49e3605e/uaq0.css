@@ -1,0 +1,182 @@
+:root {
+    --accent: #bb9af7;
+}
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* ── Shared pill bases ────────────────────────────────────────────────────── */
+
+#window, #mpris, #pulseaudio, #tray,
+#idle_inhibitor, #custom-notification,
+#custom-power, #custom-weather {
+    background-color: #24283b;
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+#custom-launcher, #custom-btop, #custom-updates, #workspaces {
+    background-color: #24283b;
+    margin: 5px 0;
+    padding: 0 12px;
+}
+
+
+/* ── Left modules ─────────────────────────────────────────────────────────── */
+
+#custom-launcher {
+    color: var(--accent);
+    margin-left: 8px;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-launcher:hover { background-color: var(--accent); color: #24283b; }
+
+#custom-btop {
+    color: var(--accent);
+    margin-left: 8px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-btop:hover { background-color: var(--accent); color: #24283b; }
+
+#custom-updates {
+    color: var(--accent);
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 0;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-updates:hover { background-color: var(--accent); color: #24283b; }
+
+#custom-system {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+#custom-system:hover { background-color: var(--accent); color: #24283b; }
+
+#workspaces { border-radius: 0 10px 10px 0; }
+#workspaces button        { color: #c0caf5; padding: 0 4px; }
+#workspaces button.active { color: var(--accent); }
+
+#window { color: var(--accent); }
+
+#mpris { color: var(--accent); }
+#mpris:hover { background-color: var(--accent); color: #24283b; }
+
+
+/* ── Center modules ───────────────────────────────────────────────────────── */
+
+#custom-weather { color: var(--accent); }
+#custom-weather:hover { background-color: var(--accent); color: #24283b; }
+
+#clock {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+
+#custom-date {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* ── Right modules ────────────────────────────────────────────────────────── */
+
+#pulseaudio { color: var(--accent); }
+#pulseaudio:hover { background-color: var(--accent); color: #24283b; }
+
+#custom-keyboard-light {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 0 5px 2px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-keyboard-light:hover { background-color: var(--accent); color: #24283b; }
+
+#backlight {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 2px 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+#backlight:hover { background-color: var(--accent); color: #24283b; }
+
+#tray { color: #ffffff; }
+
+#idle_inhibitor { color: var(--accent); }
+#idle_inhibitor:hover { background-color: var(--accent); color: #24283b; }
+
+#custom-notification { color: var(--accent); }
+#custom-notification:hover { background-color: var(--accent); color: #24283b; }
+
+#custom-powerprofile {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 0 5px 2px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+#custom-powerprofile:hover { background-color: var(--accent); color: #24283b; }
+
+#battery {
+    background-color: #24283b;
+    color: var(--accent);
+    margin: 5px 2px 5px 0;
+    padding: 0 12px;
+    border-radius: 0 10px 10px 0;
+}
+#battery:hover                         { background-color: var(--accent); color: #24283b; }
+#battery.critical:not(.charging)       { color: #f7768e; }
+#battery.critical:not(.charging):hover { background-color: #f7768e; color: #24283b; }
+
+#custom-power {
+    color: var(--accent);
+    margin-right: 8px;
+}
+#custom-power:hover { background-color: var(--accent); color: #24283b; }
+
+
+/* ── Tooltips ─────────────────────────────────────────────────────────────── */
+
+window#waybar-tooltip {
+    background-color: #24283b;
+    color: #c0caf5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+window#waybar-tooltip tooltip {
+    background-color: #24283b;
+    color: #c0caf5;
+    border: 1px solid rgba(122, 162, 247, 0.3);
+    border-radius: 8px;
+}

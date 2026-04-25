@@ -1,0 +1,78 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Base Pill Style for ALL Modules */
+#custom-launcher, #workspaces, #window, #custom-weather, #mpris,
+#clock, #custom-date, #pulseaudio, #backlight, #battery, 
+#tray, #idle_inhibitor, #custom-notification, #custom-power {
+    background-color: #24283b;
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+/* Left Section Customizations */
+#custom-launcher {
+    color: #7aa2f7;
+    margin-left: 8px;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#workspaces {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#workspaces button { color: #c0caf5; padding: 0 4px; }
+#workspaces button.active { color: #7aa2f7; }
+
+#window { color: #9abdf5; background-color: #2e3440; }
+#custom-weather { color: #9ece6a; }
+#mpris { color: #1db954; background-color: #191414; }
+
+/* Center Section Customizations */
+#clock {
+    color: #bb9af7;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#custom-date {
+    color: #bb9af7;
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0;
+}
+
+/* Right Section Customizations */
+#pulseaudio { color: #7dcfff; }
+#backlight { color: #e0af68; }
+#battery { color: #9ece6a; }
+#idle_inhibitor { color: #f7768e; }
+#custom-notification { color: #bb9af7; }
+
+#custom-power {
+    color: #f7768e;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+#custom-power:hover {
+    background-color: #f7768e;
+    color: #24283b;
+}

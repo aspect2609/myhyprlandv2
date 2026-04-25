@@ -1,0 +1,14 @@
+2026-04-25 18:24:03.687 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
+2026-04-25 18:24:04.334 [info] Started local extension host with pid 318803.
+2026-04-25 18:24:04.654 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
+2026-04-25 18:24:05.232 [error] Unable to create workbench contribution 'workbench.contrib.agentHostTerminal'. [createInstance] wbe depends on UNKNOWN service remoteAgentHostService.
+2026-04-25 18:24:05.932 [error] Error while getting the latest version for the extension ms-python.python. TypeError: Failed to fetch
+2026-04-25 18:24:07.308 [info] [perf] Render performance baseline is 49ms
+2026-04-25 18:24:18.796 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
+2026-04-25 18:24:19.680 [info] Started local extension host with pid 322235.
+2026-04-25 18:24:20.076 [error] Ignoring terminal.integrated.initialHint.copilotCli as terminal.integrated.initialHint is true
+2026-04-25 18:24:20.941 [error] Unable to create workbench contribution 'workbench.contrib.agentHostTerminal'. [createInstance] wbe depends on UNKNOWN service remoteAgentHostService.
+2026-04-25 18:24:21.471 [error] Error while getting the latest version for the extension ms-python.python. TypeError: Failed to fetch
+2026-04-25 18:24:22.351 [info] [perf] Render performance baseline is 53ms
+2026-04-25 18:24:51.516 [error] [Extension Host] (node:322235) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `exe --trace-deprecation ...` to show where the warning was created)

@@ -1,0 +1,59 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 40,
+    "name": "dock",
+    "start_hidden": true,
+    "on-sigusr1": "toggle",
+    "modules-center": [
+        "custom/librewolf",
+        "custom/onenote",
+        "custom/teams",
+        "custom/vscode",
+        "custom/waypaper",
+        "custom/dolphin",
+        "custom/rofi"
+    ],
+
+    "custom/librewolf": {
+        "format": "󰈹 ",
+        "on-click": "librewolf",
+        "tooltip": false
+    },
+
+    "custom/onenote": {
+        "format": "󰠮",
+        "on-click": "p3x-onenote",
+        "tooltip": false
+    },
+
+    "custom/teams": {
+        "format": "󰊻",
+        "on-click": "teams-for-linux",
+        "tooltip": false
+    },
+
+    "custom/vscode": {
+        "format": "󰨞 ",
+        "on-click": "code",
+        "tooltip": false
+    },
+
+    "custom/waypaper": {
+        "format": "󰸉",
+        "on-click": "waypaper",
+        "tooltip": false
+    },
+
+    "custom/dolphin": {
+        "format": "󰉋 ",
+        "on-click": "dolphin",
+        "tooltip": false
+    },
+
+    "custom/rofi": {
+        "format": "󰣇 ",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    }
+}

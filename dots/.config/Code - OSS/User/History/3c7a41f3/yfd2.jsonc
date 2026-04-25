@@ -1,0 +1,191 @@
+{
+    // ── Bar layout ─────────────────────────────────────────────────────────────
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "custom/btop",
+        "custom/updates",
+        "custom/system",
+        "hyprland/window",
+        "mpris"
+    ],
+    "modules-center": [
+        "custom/weather",
+        "clock",
+        "custom/date"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "custom/keyboard-light",
+        "backlight",
+        "tray",
+        "idle_inhibitor",
+        "custom/notification",
+        "custom/powerprofile",
+        "battery",
+        "custom/power"
+    ],
+
+    // ── Left modules ───────────────────────────────────────────────────────────
+    "custom/launcher": {
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+
+    "custom/btop": {
+        "format": "󰄪",
+        "on-click": "kitty --class btop -e btop",
+        "tooltip": false
+    },
+
+    "custom/updates": {
+        "format": "󰚰 {}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "count=$(checkupdates | wc -l); echo \"{\\\"text\\\":\\\"$count\\\"}\"",
+        "on-click": "kitty -e sudo pacman -Syyu",
+        "interval": 3600,
+        "tooltip": false
+    },
+
+    "custom/system": {
+        "format": "󰒓",
+        "escape": true,
+        "return-type": "json",
+        "exec": "cpu=$(top -bn1 | grep 'Cpu(s)' | awk '{print $2}' | cut -d'%' -f1); mem=$(free -m | awk '/Mem:/ {printf \"%.0f\", $3/$2*100}'); temp=$(cat /sys/class/hwmon/hwmon6/temp1_input | awk '{printf \"%.0f\", $1/1000}'); echo \"{\\\"text\\\":\\\"${cpu}% ${mem}% ${temp}C\\\",\\\"tooltip\\\":\\\"CPU: ${cpu}%\\nRAM: ${mem}%\\nTemp: ${temp}C\\\"}\"",
+        "interval": 5,
+        "tooltip": true
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "all-outputs": true
+    },
+
+    "hyprland/window": {
+        "format": "󱂬  {}",
+        "separate-outputs": true,
+        "max-length": 20,
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "󰈹  Firefox",
+            "(.*) - Visual Studio Code": "󰨞  VS Code",
+            "(.*) - Discord": "󰙯  Discord",
+            "^$": "󰇄  Desktop"
+        }
+    },
+
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "max-length": 15,
+        "player-icons": {
+            "default": "▶",
+            "spotify": "",
+            "firefox": ""
+        }
+    },
+
+    // ── Center modules ─────────────────────────────────────────────────────────
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 1800,
+        "exec": "curl -s 'wttr.in/?format=1'",
+        "on-click": "xdg-open https://wttr.in"
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/date": {
+        "format": "  {}",
+        "exec": "date +'%A %-d %B'",
+        "interval": 60,
+        "tooltip": true,
+        "tooltip-format": "{full}"
+    },
+
+    // ── Right modules ──────────────────────────────────────────────────────────
+    "pulseaudio": {
+        "format": "  {volume}%",
+        "format-muted": " ",
+        "on-click": "pavucontrol"
+    },
+
+    "custom/keyboard-light": {
+        "format": "󰌌 ",
+        "on-click": "brightnessctl -d *kbd_backlight* get | grep -q '^0$' && brightnessctl -d *kbd_backlight* set 100% || brightnessctl -d *kbd_backlight* set 0",
+        "on-scroll-up": "brightnessctl -d *kbd_backlight* set 10%+",
+        "on-scroll-down": "brightnessctl -d *kbd_backlight* set 10%-",
+        "tooltip": true,
+        "tooltip-format": "Keyboard: {percent}%"
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "tooltip": true,
+        "tooltip-format": "Brightness: {percent}%"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 12
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        }
+    },
+
+    "custom/notification": {
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<sup></sup>",
+            "none": " ",
+            "dnd-notification": "<sup></sup>",
+            "dnd-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "escape": true,
+        "tooltip": false
+    },
+
+    "custom/powerprofile": {
+        "format": "󰃚 {}",
+        "exec": "powerprofilesctl list | grep '*' | awk '{print $2}'",
+        "interval": 30,
+        "tooltip": true,
+        "tooltip-format": "{full}"
+    },
+
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": true,
+        "tooltip-format": "Battery: {capacity}% {time}"
+    },
+
+    "custom/power": {
+        "format": " ",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
+}

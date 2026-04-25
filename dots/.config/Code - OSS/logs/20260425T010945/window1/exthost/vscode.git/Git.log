@@ -1,0 +1,72 @@
+2026-04-25 01:09:50.443 [info] [main] Log level: Info
+2026-04-25 01:09:50.443 [info] [main] Validating found git in: "git"
+2026-04-25 01:09:50.443 [info] [main] Using git "2.53.0" from "git"
+2026-04-25 01:09:50.443 [info] [Model][doInitialScan] Initial repository scan started
+2026-04-25 01:09:50.443 [info] > git rev-parse --show-toplevel [4ms]
+2026-04-25 01:09:50.443 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [6ms]
+2026-04-25 01:09:50.443 [info] [Model][openRepository] Opened repository (path): /home/harvey
+2026-04-25 01:09:50.443 [info] [Model][openRepository] Opened repository (real path): /home/harvey
+2026-04-25 01:09:50.443 [info] [Model][openRepository] Opened repository (kind): repository
+2026-04-25 01:09:50.443 [info] > git rev-parse --show-toplevel [30ms]
+2026-04-25 01:09:50.443 [info] > git config --get commit.template [36ms]
+2026-04-25 01:09:50.445 [info] > git rev-parse --show-toplevel [10ms]
+2026-04-25 01:09:50.455 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:50.461 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [19ms]
+2026-04-25 01:09:50.469 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/harvey/.git/refs/remotes/origin/master'
+2026-04-25 01:09:50.470 [info] > git rev-parse --show-toplevel [10ms]
+2026-04-25 01:09:50.477 [info] > git rev-parse refs/remotes/origin/master [8ms]
+2026-04-25 01:09:50.498 [info] > git status -z -uall [13ms]
+2026-04-25 01:09:50.499 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2026-04-25 01:09:50.563 [info] > git rev-parse --show-toplevel [86ms]
+2026-04-25 01:09:50.644 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [88ms]
+2026-04-25 01:09:50.751 [info] > git config --get --local branch.master.vscode-merge-base [99ms]
+2026-04-25 01:09:50.751 [warning] [Git][config] git config failed: Failed to execute git
+2026-04-25 01:09:50.760 [info] > git rev-parse --show-toplevel [117ms]
+2026-04-25 01:09:50.761 [info] > git config --get commit.template [123ms]
+2026-04-25 01:09:50.775 [info] > git reflog master --grep-reflog=branch: Created from *. [15ms]
+2026-04-25 01:09:50.809 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [27ms]
+2026-04-25 01:09:50.809 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2026-04-25 01:09:50.809 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2026-04-25 01:09:50.811 [info] > git rev-parse --show-toplevel [37ms]
+2026-04-25 01:09:50.828 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [22ms]
+2026-04-25 01:09:50.836 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/harvey/.git/refs/remotes/origin/master'
+2026-04-25 01:09:50.837 [info] > git rev-parse --show-toplevel [10ms]
+2026-04-25 01:09:50.843 [info] > git rev-parse refs/remotes/origin/master [7ms]
+2026-04-25 01:09:50.862 [info] > git status -z -uall [13ms]
+2026-04-25 01:09:50.868 [info] > git rev-parse --show-toplevel [26ms]
+2026-04-25 01:09:50.881 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-04-25 01:09:50.899 [info] > git rev-parse --show-toplevel [19ms]
+2026-04-25 01:09:50.907 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:50.914 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:50.922 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:50.930 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:50.942 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:50.955 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:50.961 [info] > git rev-parse --show-toplevel [1ms]
+2026-04-25 01:09:50.971 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:50.977 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.067 [info] > git rev-parse --show-toplevel [84ms]
+2026-04-25 01:09:51.076 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.083 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.090 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.097 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:51.113 [info] > git check-ignore -v -z --stdin [4ms]
+2026-04-25 01:09:51.115 [info] > git rev-parse --show-toplevel [12ms]
+2026-04-25 01:09:51.131 [info] > git rev-parse --show-toplevel [6ms]
+2026-04-25 01:09:51.144 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.154 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.163 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:51.172 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.181 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:51.190 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.199 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:51.207 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.217 [info] > git rev-parse --show-toplevel [3ms]
+2026-04-25 01:09:51.226 [info] > git rev-parse --show-toplevel [2ms]
+2026-04-25 01:09:51.227 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-04-25 01:09:51.244 [info] > git show --textconv :.config/hypr/hyprland.conf [6ms]
+2026-04-25 01:09:51.246 [info] > git ls-files --stage -- .config/hypr/hyprland.conf [3ms]
+2026-04-25 01:09:51.254 [info] > git cat-file -s 01be13736dda139ff9fcf1ecb602fb204a23de75 [2ms]
+2026-04-25 01:09:51.276 [info] > git check-ignore -v -z --stdin [3ms]
+2026-04-25 01:09:52.141 [info] > git blame --root --incremental f12a865074fa45b6324843166117c2b342c28f10 -- .config/hypr/hyprland.conf [11ms]
+2026-04-25 01:09:52.143 [info] > git check-ignore -v -z --stdin [4ms]

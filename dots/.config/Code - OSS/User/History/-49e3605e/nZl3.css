@@ -1,0 +1,143 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Common Module Pill Style */
+#custom-weather,
+#custom-launcher,
+#workspaces,
+#window,
+#clock,
+#custom-date,
+#pulseaudio,
+#backlight,
+#battery,
+#tray,
+#custom-power,
+#custom-mpris,
+#custom-updates,
+#custom-idle-inhibitor,
+#custom-notifications {
+    background-color: #24283b;
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+/* Arch Launcher - Grouped with Workspaces */
+#custom-launcher {
+    color: #7aa2f7;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#workspaces {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 4px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #c0caf5;
+}
+
+#workspaces button.active {
+    color: #7aa2f7;
+}
+
+/* Active Window Title Pill */
+#window {
+    color: #9abdf5;
+    background-color: #2e3440;
+    margin-left: 4px;
+}
+
+/* Weather Pill */
+#custom-weather {
+    color: #9ece6a;
+    margin-left: 4px;
+}
+
+/* MPRIS Media Player Pill */
+#custom-mpris {
+    color: #ff9e64;
+    margin-left: 2px;
+    max-width: 200px;
+}
+
+/* Center Group (Clock + Date) */
+#clock {
+    color: #bb9af7;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#custom-date {
+    color: #bb9af7;
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0;
+}
+
+/* Updates Counter Pill */
+#custom-updates {
+    color: #e0af68;
+    margin-right: 2px;
+}
+
+/* Right Side Colors */
+#pulseaudio { color: #7dcfff; }
+#backlight { color: #e0af68; }
+#battery { color: #9ece6a; }
+
+#custom-power {
+    color: #f7768e;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+#custom-power:hover {
+    background-color: #f7768e;
+    color: #24283b;
+}
+
+/* Idle Inhibitor Pill */
+#custom-idle-inhibitor {
+    color: #bb9af7;
+    font-size: 16px;
+    margin-right: 2px;
+}
+
+#custom-idle-inhibitor.activated {
+    color: #f7768e;
+}
+
+/* Notification Centre Pill */
+#custom-notifications {
+    color: #7dcfff;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+#custom-notifications.dnd-notification,
+#custom-notifications.dnd-none,
+#custom-notifications.dnd-inhibited-notification,
+#custom-notifications.dnd-inhibited-none {
+    color: #f7768e;
+}

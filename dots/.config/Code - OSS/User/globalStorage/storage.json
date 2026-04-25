@@ -1,0 +1,115 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "d1af5368603e4b2322805adc7ce96bab10124fbee071302e86fc47ea0127c7eb",
+    "telemetry.devDeviceId": "5544a5d3-d284-4132-a6c4-3a5837c58fbc",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/harvey/.config"
+            },
+            {
+                "folderUri": "file:///home/harvey/Projects/myhyprlandv2"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1777137843340"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/harvey/.config": "__default__profile__",
+            "file:///home/harvey/Projects/myhyprlandv2": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1777137843340": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1a1b26",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#787c99",
+            "background": "#1a1b26",
+            "editorBackground": "#1a1b26",
+            "titleBarBackground": "#16161e",
+            "titleBarBorder": "#101014",
+            "activityBarBackground": "#16161e",
+            "activityBarBorder": "#16161e",
+            "sideBarBackground": "#16161e",
+            "sideBarBorder": "#101014",
+            "statusBarBackground": "#16161e",
+            "statusBarBorder": "#101014",
+            "statusBarNoFolderBackground": "#16161e",
+            "windowBorder": "#0d0f17"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/harvey/.config",
+            "backupPath": "/home/harvey/.config/Code - OSS/Backups/582876453dc126742b6aadefbac4dce8",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 1080
+            }
+        },
+        "openedWindows": [
+            {
+                "folder": "file:///home/harvey/.config",
+                "backupPath": "/home/harvey/.config/Code - OSS/Backups/582876453dc126742b6aadefbac4dce8",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1920,
+                    "height": 1080
+                }
+            },
+            {
+                "folder": "file:///home/harvey/Projects/myhyprlandv2",
+                "backupPath": "/home/harvey/.config/Code - OSS/Backups/2fe230bf800b9d2eab1df8348e95f496",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 950,
+                    "height": 1026
+                }
+            }
+        ]
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 236,
+            "workspaces": {
+                "bfbd38cb1b3b641a6b834b3964b84e37": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "97811f7324f028209a103a0608da008f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

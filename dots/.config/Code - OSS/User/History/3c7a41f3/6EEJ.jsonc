@@ -1,0 +1,102 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+    "modules-left": [
+        "custom/launcher", 
+        "hyprland/workspaces",
+        "hyprland/window",
+        "custom/weather",
+        "mpris"
+    ],
+    "modules-center": ["clock", "custom/date"],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "tray",
+        "idle_inhibitor", // New
+        "custom/notification", // New
+        "custom/power"
+    ],
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        }
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": " ",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": " ",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": " ",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    // ... (rest of your existing modules: mpris, window, weather, etc.)
+    "mpris": {
+        "format": "{player_icon} {title}",
+        "player-icons": { "default": "▶", "spotify": "" },
+        "max-length": 20
+    },
+
+    "hyprland/window": {
+        "format": "󱂬  {}",
+        "max-length": 20,
+        "rewrite": { "^$": "󰇄  Desktop" }
+    },
+
+    "custom/weather": {
+        "format": "{}",
+        "exec": "curl -s 'wttr.in/?format=1'",
+        "interval": 1800
+    },
+
+    "custom/launcher": { "format": " ", "on-click": "rofi -show drun" },
+
+    "hyprland/workspaces": { "format": "{name}" },
+
+    "clock": { "format": "  {:%H:%M}" },
+
+    "custom/date": {
+        "exec": "date +'%A %d'$(date +%d | sed 's/01/st/;s/02/nd/;s/03/rd/;s/[0-9][1-3]/th/;s/[04-09]/th/;s/1[1-3]/th/')' %B'",
+        "interval": 3600,
+        "format": "  {}"
+    },
+
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": { "default": ["", "", ""] }
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "tray": { "icon-size": 18, "spacing": 10 },
+
+    "custom/power": { "format": " ", "on-click": "wlogout" }
+}

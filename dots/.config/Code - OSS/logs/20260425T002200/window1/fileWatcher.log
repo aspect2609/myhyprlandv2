@@ -1,0 +1,2 @@
+2026-04-25 00:22:13.926 [error] [File Watcher ('parcel')] Unexpected error: inotify_add_watch on '/home/harvey/.config/Code - OSS/logs/20260421T202749/window1/output_20260421T202753' failed: No such file or directory (EUNKNOWN) (path: /home/harvey)
+2026-04-25 00:22:13.926 [error] [File Watcher (universal)] inotify_add_watch on '/home/harvey/.config/Code - OSS/logs/20260421T202749/window1/output_20260421T202753' failed: No such file or directory

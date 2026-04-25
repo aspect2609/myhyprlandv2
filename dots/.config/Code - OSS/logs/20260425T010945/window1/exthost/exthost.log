@@ -1,0 +1,11 @@
+2026-04-25 01:09:49.406 [info] Extension host with pid 745363 started
+2026-04-25 01:09:49.406 [info] Skipping acquiring lock for /home/harvey/.config/Code - OSS/User/workspaceStorage/bfbd38cb1b3b641a6b834b3964b84e37.
+2026-04-25 01:09:49.627 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-04-25 01:09:49.698 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-04-25 01:09:49.984 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-04-25 01:09:50.044 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-04-25 01:09:50.158 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-04-25 01:09:50.425 [info] Eager extensions activated
+2026-04-25 01:09:50.575 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-04-25 01:09:50.581 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-04-25 01:12:04.119 [info] Extension host terminating: renderer closed the MessagePort

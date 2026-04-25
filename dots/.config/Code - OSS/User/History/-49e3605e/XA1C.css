@@ -1,0 +1,88 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Base Pill Style for Standalone Modules */
+#window, #custom-weather, #mpris, #pulseaudio, 
+#custom-keyboard-light, #backlight, #battery, #tray, 
+#idle_inhibitor, #custom-notification, #custom-power {
+    background-color: #24283b;
+    margin: 5px 2px;
+    padding: 0 12px;
+    border-radius: 10px;
+}
+
+/* --- Triple-Split Pill (Left) --- */
+#custom-launcher, #custom-btop, #workspaces {
+    background-color: #24283b;
+    margin: 5px 0px;
+    padding: 0 12px;
+}
+
+#custom-launcher {
+    color: #7aa2f7;
+    margin-left: 8px;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+
+#custom-btop {
+    color: #bb9af7;
+    border-radius: 0;
+    border-right: 1px solid rgba(192, 202, 245, 0.1);
+}
+
+#workspaces {
+    border-radius: 0 10px 10px 0;
+}
+
+#workspaces button { color: #c0caf5; padding: 0 4px; }
+#workspaces button.active { color: #7aa2f7; }
+
+/* --- Center Group --- */
+#clock {
+    background-color: #24283b;
+    color: #bb9af7;
+    margin: 5px 0;
+    padding: 0 12px;
+    border-radius: 10px 0 0 10px;
+}
+
+#custom-date {
+    background-color: #24283b;
+    color: #bb9af7;
+    margin: 5px 0;
+    padding: 0 12px 0 0;
+    border-radius: 0 10px 10px 0;
+}
+
+/* --- Module Colors --- */
+#window { color: #9abdf5; background-color: #2e3440; margin-left: 6px; }
+#custom-weather { color: #9ece6a; }
+#mpris { color: #1db954; background-color: #191414; }
+
+#pulseaudio { color: #7dcfff; }
+#custom-keyboard-light { color: #b4f9f8; }
+#backlight { color: #e0af68; }
+#battery { color: #9ece6a; }
+#idle_inhibitor { color: #f7768e; }
+#custom-notification { color: #bb9af7; }
+
+#custom-power {
+    color: #f7768e;
+    margin-right: 8px;
+}
+
+#custom-power:hover {
+    background-color: #f7768e;
+    color: #24283b;
+}

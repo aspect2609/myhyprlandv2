@@ -1,0 +1,15 @@
+2026-04-25 00:22:03.951 [info] Extension host with pid 575755 started
+2026-04-25 00:22:03.951 [info] Skipping acquiring lock for /home/harvey/.config/Code - OSS/User/workspaceStorage/bfbd38cb1b3b641a6b834b3964b84e37.
+2026-04-25 00:22:04.636 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-04-25 00:22:04.696 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-04-25 00:22:04.730 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-04-25 00:22:04.749 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-04-25 00:22:04.948 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-04-25 00:22:05.431 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-04-25 00:22:05.453 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-04-25 00:22:05.581 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-04-25 00:22:05.878 [info] Eager extensions activated
+2026-04-25 00:22:05.963 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-04-25 00:22:05.978 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-04-25 00:22:32.561 [info] Extension host terminating: received terminate message from renderer
+2026-04-25 00:22:32.587 [info] Extension host with pid 575755 exiting with code 0
